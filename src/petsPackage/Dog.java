@@ -1,13 +1,19 @@
-package dogPackage;
+package petsPackage;
 
 import animalPackage.Animal;
 
-public class Dog  extends Animal  // In C# : object
+public class Dog extends Animal // In C# : object
 {
 	public   String name;
 	static private int age;
 	static int dogCounter=0;
 
+	@Override
+	public String toString() {
+		return "This object is " + this.name;
+		
+		
+	}
 	Dog(){
 		dogCounter++;
 		System.out.println("dogCounter: " + dogCounter);
@@ -49,9 +55,11 @@ public class Dog  extends Animal  // In C# : object
 	float weight;
 	float height;
 
-	void eat(){
+	public void eat(){
 
 	}
+	
+	@Override
 	public void move(){
 		System.out.println("Dog::move().......");
 

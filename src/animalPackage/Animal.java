@@ -1,10 +1,17 @@
 package animalPackage;
 
-public class Animal {
-
+public    class Animal //extends Object
+{
 	public int legCount;
-	public void move() {
-		System.out.println("Animal::move().......");
-	}
+
+	 public void move() {}// non-abstarct
+	
+	public void eat() {
+		System.out.println("Animal::eat().......");
+		
+		
+	} // Non-abstarct
+
+
 
 }
